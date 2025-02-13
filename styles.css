@@ -1,0 +1,135 @@
+:root {
+    --saffron: #FF9933;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--dark-bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Loading Screen */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--saffron);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Tribute Animation */
+.tribute-animation {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s ease-out forwards;
+    margin-top: 20px;
+}
+
+.tribute-animation .flag {
+    width: 120px;
+    animation: waveFlag 2s infinite alternate;
+}
+
+@keyframes waveFlag {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(3deg); }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(49, 48, 48, 0.9), rgba(31, 31, 31, 0.9)), 
+    url('https://media.gettyimages.com/id/631875296/photo/new-delhi-india-january-15-indian-army-soldiers-take-part-in-a-mock-drill-during-the-army-day.jpg?s=612x612&w=0&k=20&c=jrTrT9cMpKQ8iY3XEHseguOPX8O3u6on3Xf_4b0U8fo=');
+    background-size: cover;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Candle Grid */
+.candle-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.candle {
+    width: 40px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 2.5rem;
+    text-align: center;
+    filter: grayscale(1);
+}
+
+.candle.lit {
+    filter: none;
+    animation: flame 1.5s ease-in-out infinite;
+}
+
+/* Martyrs Grid */
+.martyrs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.martyr-card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.martyr-card:hover {
+    transform: translateY(-5px);
+}
+
+.martyr-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
