@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Candle Implementation
 function createCandles() {
     const candleGrid = document.getElementById('candleGrid');
-    for (let i = 0; i <= 40; i++) {
+    for (let i = 0; i < 40; i++) {
         const candle = document.createElement('div');
         candle.className = 'candle';
         candle.innerHTML = '🕯️';
