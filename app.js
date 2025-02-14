@@ -40,7 +40,6 @@ const martyrs = [
     { name: "Hemraj Meena", state: "Rajasthan", regiment: "76th Battalion", image: "images/hemraj_meena.png" },
     { name: "Jaimal Singh", state: "Punjab", regiment: "76th Battalion", image: "images/jaimal_singh.png" },
     { name: "Jeet Ram", state: "Rajasthan", regiment: "76th Battalion", image: "images/jeet_ram.png" },
-    { name: "K. Sivachandran", "state": "Tamil Nadu", "regiment": "76th Battalion", "image": "images/k_sivachandran.png" },
     { name: "Koushal Rawat", state: "Uttar Pradesh", regiment: "76th Battalion", image: "images/koushal_rawat.png" },
     { name: "Kulwinder Singh", state: "Punjab", regiment: "76th Battalion", image: "images/kulwinder_singh.png" },
     { name: "Mahesh Kumar", state: "Uttar Pradesh", regiment: "76th Battalion", image: "images/mahesh_kumar.png" },
