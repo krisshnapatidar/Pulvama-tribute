@@ -63,12 +63,12 @@ const martyrs = [
     { name: "Sudip Biswas", state: "West Bengal", regiment: "76th Battalion", image: "images/sudip_biswas.png" },
     { name: "Subramaniam G", state: "Tamil Nadu", regiment: "76th Battalion", image: "images/subramaniam_g.png" },
     { name: "Sukhjinder Singh", state: "Punjab", regiment: "76th Battalion", image: "images/sukhjinder_singh.png" },
+    { name: "Sushil Kumar R", state: "Tamil Nadu", regiment: "76th Battalion", image: "images/sushil_kumar.png" },
     { name: "Tilak Raj", state: "Himachal Pradesh", regiment: "76th Battalion", image: "images/tilak_raj.png" },
     { name: "Vasantha Kumar", state: "Kerala", regiment: "76th Battalion", image: "images/vasantha_kumar.png" },
     { name: "Vijay Mourya", state: "Uttar Pradesh", regiment: "76th Battalion", image: "images/vijay_mourya.png" },
     { name: "Vijay Soreng", state: "Jharkhand", regiment: "76th Battalion", image: "images/vijay_soreng.png" },
     { name: "Virendra Singh", state: "Uttarakhand", regiment: "76th Battalion", image: "images/virendra_singh.png" },
-    { name: "Sushil Kumar R", state: "Tamil Nadu", regiment: "76th Battalion", image: "images/sushil_kumar_r.png" },
 ];
 
 function loadMartyrs() {
